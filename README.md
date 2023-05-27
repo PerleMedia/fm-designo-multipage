@@ -5,11 +5,17 @@ https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT
 
 # Live Demo
 
-Netlify C/D:
+Netlify C/D: https://perlemedia-fm-designo-multipage.netlify.app/
 
 
 ## Languages, Frameworks, and Libraries
 
+* React
 * HTML5
 * CSS3
+* SASS
+* JavaScript
+
+
+
 
