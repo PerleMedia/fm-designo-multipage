@@ -299,7 +299,7 @@ footer#footer .contact .socials a:hover svg path {
 
 /* Homepage */
 main#home #welcome {
-  height: calc(100vh - calc(26.5px + (64px * 2)) + 80px);
+  height: calc(100vh - calc(26.5px + (64px * 2)));
   position: relative;
   padding-top: 0;
 }

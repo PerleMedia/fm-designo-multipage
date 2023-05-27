@@ -27,7 +27,7 @@ const ProjectsLink = (props) => {
     }
 
     return (
-        <Link to={pagePath} id="cmp-projectlink" onClick={targetTop()} className="module" style={{backgroundImage:`url(${bg})`}} aria-role="button" aria-label={`View ${props.type} design projects`}>
+        <Link to={pagePath} id="cmp-projectlink" onClick={targetTop()} className="module" style={{backgroundImage:`url(${bg})`}} role="button" aria-label={`View ${props.type} design projects`}>
             <div className="overlay"></div> 
             <div className="content-wrap">
                 <h2 className="secondary-heading">

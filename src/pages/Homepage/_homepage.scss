@@ -1,13 +1,14 @@
 /* Homepage */
 main#home{
     #welcome{
-        height:calc(100vh - #{$header_height_desktop} + 80px);
+        height:calc(100vh - #{$header_height_desktop});
         position: relative;
         padding-top:0;
         .maxwidth-container{
             height:100%;
             .module{
                 height:100%;
+                
                 .content{
                     width:58.6%;
                     z-index: 2;
