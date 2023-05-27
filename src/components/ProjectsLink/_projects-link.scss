@@ -1,0 +1,44 @@
+/* Project Link */
+#cmp-projectlink{
+    padding:107px 20px;
+    text-align: center;
+    background-color: $black;
+    background-size:cover;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content-wrap{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .secondary-heading{
+            text-transform: uppercase;
+        }
+        .tertiary-heading{
+            font-size:15px;
+            text-transform: uppercase;
+        }
+    }
+    .overlay{
+        background: black;
+        opacity:.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: $transition;
+    }
+    &:hover{
+        .overlay{
+            background: $peach;
+            opacity:.8;
+            transition: $transition;
+        }
+    }
+    @media (max-width:$tablet){
+        padding:53px 10px;
+    }
+}

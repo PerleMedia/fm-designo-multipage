@@ -1,0 +1,85 @@
+/* Locations */
+main#locations{
+    .location-grid{
+        padding-top:0;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 32px;
+        .location{
+            width: 100%;
+            column-gap: 30px;
+            .module{
+                flex:1.8;
+                padding:88px 95px;
+                .bg-pattern{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+                .secondary-heading{
+                    color:$peach;
+                }
+            }
+            .map{
+                flex:1.2;
+                background:$grey_light;
+                border-radius: $border-radius;
+                overflow: hidden;
+                img{
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    @media (max-width:$tablet){
+        .location-grid{
+            row-gap: 120px;
+            .location{
+                flex-wrap:wrap;
+                .module{
+                    width: 100%;
+                    order: 2;
+                    flex: unset;
+                    .secondary-heading{
+                        text-align: left;
+                    }
+                    .row{
+                        flex-wrap: nowrap;
+                        text-align: left;
+                    }
+                }
+                .map{
+                    height:326px;
+                    margin-bottom:31px;
+                }
+            }
+        }
+    }
+    @media (max-width:$mobile){
+        .location-grid{
+            row-gap: 40px;
+            .location{
+                .module{
+                    text-align: center;
+                    .secondary-heading{
+                        text-align: center;
+                        margin-bottom: 24px;
+                        font-size: 32px;
+                        line-height: 1.125em;
+                    }
+                    .row{
+                        flex-wrap:wrap;
+                        text-align: center;
+                    }
+                }
+                .map{
+                    border-radius:0;
+                    margin:0;
+                }
+            }
+        }
+    }
+}

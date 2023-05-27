@@ -1,0 +1,72 @@
+/* Contact */
+main#contact{
+    #contact{
+        height:calc(100vh - #{$header_height_desktop});
+        position: relative;
+        padding-top:0;
+        .maxwidth-container{
+            height:100%;
+            .module{
+                padding:55px;
+                .content{
+                    width:58.6%;
+                    z-index: 2;
+                    p{
+                        width:82.5%;
+                    }
+                    .bg-pattern{
+                        position: absolute;
+                        bottom:-6px;
+                        left:0;
+                        height:auto;
+                        width:100%;
+                    }
+                }
+                .form{
+                    margin-bottom: -6px;
+                    z-index: 2;
+                }
+                
+            }
+        }
+        .leaf{
+            z-index: -1;
+            position:absolute;
+            bottom:-194px;
+        }
+    }
+
+    #cmp-locations{
+        .leaf{
+            right: 0;
+        }
+
+    }
+    @media (max-width:$tablet){
+        #contact{
+            height:auto;
+            .maxwidth-container{
+                .module{
+                    .content{
+                        text-align: left;
+                        width: 100%;
+                        @media (max-width:$mobile){
+                            text-align: center;
+                        }
+                        p{
+                            width: 100%;
+                        }
+                        .bg-pattern{
+                            bottom: 154px;
+                            right: 170px;
+                            left: unset;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    
+    }
+
+}

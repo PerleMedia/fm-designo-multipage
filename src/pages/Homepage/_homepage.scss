@@ -1,0 +1,145 @@
+/* Homepage */
+main#home{
+    #welcome{
+        height:calc(100vh - #{$header_height_desktop} + 80px);
+        position: relative;
+        padding-top:0;
+        .maxwidth-container{
+            height:100%;
+            .module{
+                height:100%;
+                .content{
+                    width:58.6%;
+                    z-index: 2;
+                    p{
+                        width:82.5%;
+                        margin:31px 0;
+                    }
+                    .button{
+                        margin:10px 0 0;
+                    }
+                }
+                .image{
+                    position: absolute;
+                    bottom:0;
+                    right: 0px;
+                    width: 39.5%;
+                    z-index: 2;
+                    img{
+                        position: absolute;
+                        width:100%;
+                        bottom:0;
+                    }
+                }
+                .bg-pattern{
+                    position: absolute;
+                    height:100%;
+                    right:0;
+                }
+            }
+        }
+        .leaf{
+            z-index: -1;
+            position:absolute;
+            bottom: -194px;
+        }
+        @media (max-width:$laptop){
+            height:auto;
+            .maxwidth-container{
+                .module{
+                    padding-bottom: 0;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    .content{
+                        width:100%;
+                        p{
+                            width:100%;
+                            margin:15px 0;
+                        }
+                        .button{
+                            margin:10px 0 0;
+                        }
+                    }
+                    .image{
+                        position: relative;
+                        bottom:-6px;
+                        right: -15px;
+                        width: 100%;
+                        z-index: 2;
+                        margin-top: -70px;
+                        margin-bottom: -150px;
+                        @media (max-width:$mobile){
+                            margin-top: -35px;
+                            margin-bottom: -100px;
+                        }
+                        img{
+                            position: relative;
+                            width:100%;
+                            bottom:0;
+                        }
+                    }
+                    .bg-pattern{
+                        position: absolute;
+                        height:100%;
+                        right:-80px;
+                        img{
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    #values{
+        position: relative;
+        .row{
+            column-gap: 30px;
+            .col{
+                text-align: center;
+                .image-wrapper{
+                    position:relative;
+                    margin-bottom: 48px;
+                    .illustration{
+                        margin: 0 auto;
+                        display: block;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+                .tertiary-heading{
+                    text-transform: uppercase;
+                    margin-bottom: 32px;
+                }
+                @media (max-width:$tablet){
+                    display:flex;
+                    align-items: center;
+                    text-align: left;
+                    column-gap: 48px;
+                    .tertiary-heading{
+                        margin-bottom: 16px;
+                    }
+                    @media (max-width:$mobile){
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        text-align: center;
+                        &:not(:last-child){
+                            margin-bottom:80px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .leaf{
+            transform: rotate(180deg);
+            position: absolute;
+            top: 204px;
+            right: 0;
+            z-index: -1;
+        }
+    }
+}

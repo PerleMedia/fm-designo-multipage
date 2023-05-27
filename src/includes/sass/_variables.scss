@@ -1,0 +1,30 @@
+// Colors
+$peach: #E7816B;
+$peach_medium: #FFAD9B;
+$peach_light: #FDF3F0;
+$grey_dark: #333136;
+$grey_light: #F1F3F5;
+$black: #1D1C1E;
+
+// Typography
+$primary_font: "Jost";
+
+// Structure
+$max_container_width: 1111px;
+$lg_desktop: 1449px;
+$sm_desktop: 1199px;
+$laptop: 991px;
+$tablet: 767px;
+$mobile: 575px;
+
+// Header
+$logo_height:26.5px;
+$header_padding_desktop: 64px;
+$header_height_desktop: calc(#{$logo_height} + (#{$header_padding_desktop} * 2));
+$header_padding_mobile: 35px;
+$header_height_mobile: calc(#{$logo_height} + (#{$header_padding_mobile} * 2));
+
+// Elements
+$padding:64px;
+$border-radius:15px;
+$transition:.5s ease-in-out;

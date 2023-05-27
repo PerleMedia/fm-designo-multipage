@@ -1,0 +1,202 @@
+/* About */
+main#about{
+    #our-story{
+        height:calc(100vh - #{$header_height_desktop});
+        position: relative;
+        padding-top:0;
+        .maxwidth-container{
+            height:100%;
+            .module{
+                padding:0;
+                .content{
+                    width:58.6%;
+                    z-index: 2;
+                    padding:0 95px;
+                    p{
+                        width:82.5%;
+                    }
+                    .bg-pattern{
+                        position: absolute;
+                        bottom:-6px;
+                        left:0;
+                        height:auto;
+                        width:100%;
+                    }
+                }
+                .image{
+                    margin-bottom: -6px;
+                    z-index: 2;
+                }
+                
+            }
+        }
+        .leaf{
+            z-index: -1;
+            position:absolute;
+            bottom:-194px;
+        }
+        @media (max-width:$laptop){
+            height:auto;
+            .maxwidth-container{
+                .module{
+                    flex-wrap: wrap;
+                    text-align: center;
+                    .content{
+                        order: 2;
+                        width: 100%;
+                        padding: 64px 58px;
+                        p{
+                            width: 100%;
+                        }
+                        .bg-pattern{
+                            img{
+                                left: -100px;
+                                bottom: 100px;
+                                position: relative;
+                            }
+                        }
+                    }
+                    .image{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    #talent{
+        .module{
+            padding:0;
+            .image{
+                margin-bottom: -6px;
+                z-index: 2;
+            }
+            .content{
+                padding:95px;
+                .secondary-heading{
+                    color:$peach
+                }
+            }
+            .bg-pattern{
+                position: absolute;
+                bottom: -6px;
+                left: 330px;
+            }
+        }
+        @media (max-width:$laptop){
+            height:auto;
+            .maxwidth-container{
+                .module{
+                    flex-wrap: wrap;
+                    text-align: center;
+                    .content{
+                        order: 2;
+                        width: 100%;
+                        padding: 64px 58px;
+                        p{
+                            width: 100%;
+                        }
+                        
+                    }
+                    .image{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                        
+                    }
+                    .bg-pattern{
+                        right: 11px;
+                        left: unset;
+                        bottom: 44px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    #business{
+        .module{
+            padding:0;
+            .image{
+                margin-bottom: -6px;
+                z-index: 2;
+            }
+            .content{
+                padding:95px;
+                .secondary-heading{
+                    color:$peach
+                }
+            }
+            .bg-pattern{
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+            }
+        }
+        @media (max-width:$laptop){
+            height:auto;
+            .maxwidth-container{
+                .module{
+                    flex-wrap: wrap;
+                    text-align: center;
+                    .content{
+                        order: 2;
+                        width: 100%;
+                        padding: 64px 58px;
+                        p{
+                            width: 100%;
+                        }
+                    }
+                    .image{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                        
+                    }
+                    .bg-pattern{
+                        right: 11px;
+                        left: unset;
+                        bottom: 44px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:$mobile){
+        #our-story,
+        #talent{
+            padding:0;
+            
+        }
+        #our-story,
+        #talent,
+        #business{
+            .maxwidth-container{
+                .module{
+                    .content{
+                        padding:80px 24px;
+                        .primary-heading, 
+                        .secondary-heading{
+                            margin-bottom: 24px;
+                            font-size: 32px;
+                            line-height: 1.125em;
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}

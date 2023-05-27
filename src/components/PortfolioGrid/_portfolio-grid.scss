@@ -1,0 +1,14 @@
+/* Portfolio Grid */
+#cmp-portfoliogrid{
+    .maxwidth-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap:30px;
+        row-gap:32px;
+    }
+    @media (max-width:$tablet){
+        .maxwidth-container{
+            grid-template-columns: 1fr;
+        }
+    }
+}

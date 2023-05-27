@@ -1,0 +1,45 @@
+/* Contact Form */
+#cmp-contactform{
+    form{
+        display:flex;
+        flex-wrap: wrap;
+        width: 380px;
+        input:not(.button),
+        textarea{
+            color:#fff;
+            font-family:$primary_font;
+            font-weight:bold;
+            width:100%;
+            display: block;
+            margin-bottom:25px;
+            background-color: transparent;
+            border:none;
+            border-bottom:1px solid white;
+            padding:0 16px 19px;
+            transition: $transition;
+            &::placeholder{
+                color:rgba(255,255,255,.5);
+                font-family:$primary_font;
+            }
+            &:focus{
+                outline:0;
+                border-bottom: 3px solid white;
+                transition: $transition;
+            }
+        }
+        textarea{
+            height:100px;
+        }
+        input[type="submit"]{
+            margin-left:auto;
+            padding:17px 48px;
+            @media (max-width:$mobile){
+                margin:20px auto;
+            }
+        }
+        @media (max-width:$tablet){
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+/* Locations */
+#cmp-locations{
+    position: relative;
+    .col{
+        text-align: center;
+        .image-wrapper{
+            position:relative;
+            margin-bottom: 48px;
+            .illustration{
+                margin: 0 auto;
+                display: block;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        .tertiary-heading{
+            text-transform: uppercase;
+        }
+        
+    }
+    .leaf{
+        position: absolute;
+        right: -396px;
+        top: 182px;
+        z-index: -1;
+    }
+    @media (max-width:$tablet){
+        .row{
+            row-gap:80px;
+        }
+        
+    }
+}
