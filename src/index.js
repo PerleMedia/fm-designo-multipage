@@ -14,6 +14,7 @@ import AppDesign from './pages/Projects/AppDesign';
 import GraphicDesign from './pages/Projects/GraphicDesign';
 
 // Assets
+import './includes/images/favicon-32x32.png';
 import './includes/fonts/Jost-Medium.ttf';
 import './includes/fonts/Jost-Regular.ttf';
 import './styles.css';
